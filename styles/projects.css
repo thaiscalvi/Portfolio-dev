@@ -16,13 +16,18 @@
 /* Grade que organiza os cards dos projetos */
 .grid {
   display: grid;                                    /* Define um layout de grid */
-  grid-template-columns: repeat(3,1fr); 
+  grid-template-columns: 1fr; 
   /* Cria colunas automáticas que se ajustam, com no mínimo 280px */
   gap: 24px;                                        /* Espaço entre os cards */
-   max-width: 1300px; /* Define uma largura máxima para o container */
+  max-width: 1300px; /* Define uma largura máxima para o container */
   margin: 0 auto;    /* Centraliza horizontalmente */
   padding: 0 20px;   /* Adiciona espaçamento lateral em telas menores */
 }
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }}
 
 
 /* Cada card de projeto */
@@ -32,6 +37,8 @@
   padding: 16px;                      /* Espaço interno dentro do card */
   text-align: left;                   /* Alinha texto à esquerda */
   transition: transform 0.3s ease;    /* Animação suave ao aplicar transformações */
+  width: 100%; /* Adicione essa linha */
+  box-sizing: border-box; /* Garante que padding não estoure o card */
 }
 
 /* Efeito ao passar o mouse no card */
