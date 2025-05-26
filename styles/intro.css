@@ -1,0 +1,80 @@
+.intro{
+  background-image: url(../assets/Background_Intro.png);
+  background-size: cover;
+  background-position: center; 
+  padding: 100px 20px;
+}
+
+.info {
+  /* Centraliza e limita a largura do conteúdo da seção */
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.avatar-wrapper {
+  /* Tamanho fixo do contêiner da imagem de perfil */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 40px; /* Centraliza e dá espaço abaixo */
+}
+
+.subtitle {
+  /* Estilo da primeira frase "Hello World..." */
+  font: var(--subtitle);
+  margin-bottom: 12px;
+}
+
+.highlight {
+  /* Cor vermelha para destacar o nome */
+  color: var(--red);
+}
+
+.title-lg {
+  /* Estilo do h1 */
+  font: var(--h1);
+  margin-bottom: 20px;
+}
+
+.text-sm {
+  /* Estilo do texto explicativo abaixo do título */
+  font: var(--text-sm);
+  max-width: 800px; /* Limita a largura do parágrafo */
+  margin: 0 auto 80px; /* Centraliza o texto */
+  color: var(--gray-400); /* Tom mais suave que o do título */
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+.tags{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.tag{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: var(--gray-300);
+  border-radius: 20px;
+  font: var(--text-sm);
+  color: var(--gray-600);
+}
+
+.tag:hover {
+  background-color: var(--gray-400); /* Efeito hover suave */
+}
+
+.tag img {
+  width: 20px;
+  height: 20px;
+}
+
+.scroll-icon img{
+  margin-top: 40px;
+  width:24px;
+  height:24px;
+}

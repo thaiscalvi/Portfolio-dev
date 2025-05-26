@@ -1,0 +1,60 @@
+.services{
+  padding: 100px 20px;
+  background-color: var(--gray-200);
+}
+
+.services-info {
+  max-width: 1100px;   /* Limita a largura máxima */
+  margin: 0 auto;      /* Centraliza horizontalmente */
+  text-align: center;  /* Centraliza o texto */
+  margin-bottom: 60px; /* Espaço abaixo dos títulos */
+}
+
+.services-info .subtitle {
+  font: var(--subtitle);         /* Usa a variável global definida no :root */
+  color: var(--brand);           /* Vermelho */
+  margin-bottom: 8px;            /* Espaço abaixo do subtítulo */
+}
+
+.services-info h2 {
+  font: var(--h2);               /* Usa a variável global para Título Médio */
+  color: var(--text);           /* Cor principal do texto */
+  margin-bottom: 60px;          /* Espaço para separar da grade */
+  text-align: center;           /* Centraliza o texto */
+}
+
+.services-grid {
+  display: flex; /* Usa flexbox para alinhar os cards lado a lado */
+  justify-content: center; /* Centraliza os itens na horizontal */
+  gap: 32px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Permite que quebre para a linha de baixo em telas menores */
+}
+
+.service-card {
+  background-color: var(--gray-300); /* Fundo dos cards */
+  border-radius: 8px; /* Cantos arredondados */
+  padding: 24px; /* Espaço interno no card */
+  text-align: center; /* Centraliza o conteúdo do card */
+  width: 300px; /* Largura fixa para os cards */
+  transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.service-card:hover {
+  transform: translateY(-6px); /* Levanta o card ao passar o mouse */
+}
+
+.service-card img {
+  width: 40px;   /* Tamanho do ícone */
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font: var(--h3);               /* Usa a variável global para Título Pequeno */
+  color: var(--text);           /* Cor principal */
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font: var(--text-sm);
+  color: var(--gray-600);
+}

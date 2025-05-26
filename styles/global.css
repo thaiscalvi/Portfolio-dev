@@ -5,6 +5,8 @@
 }
 
 :root{
+
+  --brand: #3996DB;
 /*  Principal */
   --red: #E3646E;
   --purple: #BB72E9;
@@ -19,8 +21,51 @@
   --gray-400: #878EA1;
   --gray-500: #C0C4CE;
   --gray-600: #E2E4E9;
+
+   /* Fontes */
+  --font-title: 'Asap', sans-serif;
+  --font-subtitle: 'Inconsolata', monospace;
+  --font-body: 'Maven Pro', sans-serif;
+
+  /* Títulos */
+  --h1: 700 56px/120% var(--font-title); /* Title lg */
+  --h2: 700 24px/120% var(--font-title); /* Title md */
+  --h3: 700 16px/120% var(--font-title); /* Title sm */
+
+  /* Subtítulo */
+  --subtitle: 400 20px/120% var(--font-subtitle);
+
+  /* Textos */
+  --text-md: 400 16px/140% var(--font-body);
+  --text-sm: 400 14px/140% var(--font-body);
 }
 
 body{
   background-color: var(--gray-100);
+  font: var(--text-md);
+  color: var(--gray-600);
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.text-md {
+  font: var(--text-md);
+}
+
+.subtitle {
+  font: var(--subtitle);
 }

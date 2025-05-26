@@ -1,0 +1,59 @@
+.projects{
+  padding: 10px 20px 90px;
+  background-color: var(--gray-200);
+}
+
+.projects-info{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-info {
+  margin-bottom: 90px;       /* Espaço entre o título e a grade de projetos */
+}
+
+/* Grade que organiza os cards dos projetos */
+.grid {
+  display: grid;                                    /* Define um layout de grid */
+  grid-template-columns: repeat(3,1fr); 
+  /* Cria colunas automáticas que se ajustam, com no mínimo 280px */
+  gap: 24px;                                        /* Espaço entre os cards */
+   max-width: 1300px; /* Define uma largura máxima para o container */
+  margin: 0 auto;    /* Centraliza horizontalmente */
+  padding: 0 20px;   /* Adiciona espaçamento lateral em telas menores */
+}
+
+
+/* Cada card de projeto */
+.project-card {
+  background-color: var(--gray-300);  /* Cor de fundo do card */
+  border-radius: 8px;                 /* Arredondamento dos cantos */
+  padding: 16px;                      /* Espaço interno dentro do card */
+  text-align: left;                   /* Alinha texto à esquerda */
+  transition: transform 0.3s ease;    /* Animação suave ao aplicar transformações */
+}
+
+/* Efeito ao passar o mouse no card */
+.project-card:hover {
+  transform: translateY(-4px); /* Move o card 4px para cima */
+}
+
+/* Imagem do card */
+.project-card img {
+  width: 100%;                /* Imagem ocupa 100% da largura do card */
+  border-radius: 6px;         /* Arredondamento da imagem */
+  margin-bottom: 12px;        /* Espaço entre imagem e o texto do card */
+}
+
+/* Título do projeto dentro do card */
+.project-card h3 {
+  font: var(--h3);           /* Aplica estilo de fonte h3 usando variável */
+  margin-bottom: 8px;        /* Espaço inferior entre o título e o parágrafo */
+}
+
+/* Descrição do projeto dentro do card */
+.project-card p {
+  font: var(--text-sm);      /* Fonte menor, seguindo seu padrão */
+  color: var(--gray-500);    /* Cor de texto mais suave */
+}

@@ -1,0 +1,67 @@
+
+
+.contact {
+  padding: 60px 20px; /* Espaçamento interno */
+  background-image: url(../assets/Background_Contacts.png);
+   background-repeat: no-repeat;        /* Evita que a imagem se repita */
+  background-size: cover;              /* Faz a imagem preencher todo o espaço */
+  background-position: center center;  /* Centraliza horizontal e verticalmente */
+}
+
+.contact-info {
+  text-align: center; /* Centraliza o conteúdo */
+  margin-bottom: 40px; /* Espaço abaixo dos textos */
+}
+
+.contact-info .subtitle {
+  font: var(--subtitle); /* Usa a var de subtítulo */
+  color: var(--brand);   /* Vermelho de destaque */
+  margin-bottom: 8px;
+}
+
+.contact-info h2 {
+  font: var(--h2); /* Usa a var de título médio */
+  color: var(--text); 
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  font: var(--text-sm); /* Texto pequeno */
+  color: var(--gray-600);
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 0 auto; /* Centraliza */
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-300);
+  border-radius: 8px;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+ border: 2px solid var(--brand);
+}
+
+.contact-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-link span {
+  flex: 1;
+  margin-left: 12px;
+  font: var(--text-md);
+  color: var(--gray-500);
+  text-align: left;
+}
