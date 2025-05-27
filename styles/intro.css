@@ -36,6 +36,14 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 480px) {
+  .title-lg {
+    font-size: 32px; /* ou o valor que ficar melhor visualmente */
+    text-align: center; /* reforça o alinhamento */
+    padding: 0 10px; /* garante que o texto não encoste nas bordas */
+  }
+}
+
 .text-sm {
   /* Estilo do texto explicativo abaixo do título */
   font: var(--text-sm);
